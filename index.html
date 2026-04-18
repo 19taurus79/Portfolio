@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Portfolio/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LloydJefferson</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/Portfolio/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/Portfolio/assets/vendor-ta0zTdEU.js">
+    <link rel="stylesheet" crossorigin href="/Portfolio/assets/vendor-mBafjoys.css">
+    <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-DGts-TVo.css">
+  </head>
+  <body data-dark-class="dark-theme-cl-bg">
+    <header>
+  <div class="container">
+    <a href="#" class="logo-header"
+      >lloyd<span
+        class="span-header-last-name"
+        data-dark-class="dark-theme-green-color"
+        >jefferson.</span
+      ></a
+    >
+    <nav class="nav-title">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <label class="switch-header">
+            <input type="checkbox" />
+            <span class="switch-slider round"></span>
+          </label>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-item-link"
+            href="#about-me"
+            data-dark-class="dark-theme-green-color-hover"
+            >About me</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-item-link"
+            href="#my_projects"
+            data-dark-class="dark-theme-green-color-hover"
+            >Projects</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-item-link"
+            href="#contacts"
+            data-dark-class="dark-theme-green-color-hover"
+            >Contacts</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <button class="burger-btn">
+      <svg
+        class="burger-svg"
+        width="32"
+        height="32"
+        data-dark-class="dark-theme-fill"
+      >
+        <use href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-burger-btn"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" data-dark-class="dark-theme-cl-bg">
+    <div class="mobile-menu-head">
+      <a href="#" class="logo-header"
+        >lloyd<span
+          class="span-header-last-name"
+          data-dark-class="dark-theme-green-color"
+          >jefferson.</span
+        ></a
+      >
+
+      <button class="mobile-close-btn">
+        <svg
+          class="mobile-close-svg"
+          width="32"
+          height="32"
+          data-dark-class="dark-theme-stroke"
+        >
+          <use href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-x"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu-footer">
+      <ul class="mobile-list">
+        <li class="mobile-list-item">
+          <label class="switch-header">
+            <input type="checkbox" />
+            <span class="switch-slider round"></span>
+          </label>
+        </li>
+        <li class="mobile-list-item">
+          <a class="mobile-list-item-link" href="#about-me">About me</a>
+        </li>
+        <li class="mobile-list-item">
+          <a class="mobile-list-item-link" href="#my_projects">Projects</a>
+        </li>
+        <li class="mobile-list-item">
+          <a class="mobile-list-item-link" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section>
+  <div class="container">
+    <div class="hero-bgnd-img">
+      <h1 class="hero-headline">
+        <span class="hero-text-black" data-dark-class="dark-theme-cl"
+          >Hello, I am</span
+        >
+        <picture class="hero-headline-img hidden">
+          <source
+            srcset="/Portfolio/assets/hero-img@2x-yHYarqOi.webp 2x, data:image/webp;base64,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 1x"
+            type="image/webp"
+          />
+          <img src="data:image/webp;base64,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" alt="Developer photo" /> </picture
+        ><span class="hero-text-color" data-dark-class="dark-theme-green-color"
+          >Fullstack developer</span
+        >
+      </h1>
+      <div class="wrapper">
+        <a href="#contacts" class="hero-btn">
+          <svg
+            class="hero-btn-arrow"
+            width="30"
+            data-dark-class="dark-theme-green-fill dark-theme-fill-hover"
+          >
+            <use href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-arrow-right"></use>
+          </svg>
+          <span class="caption">Order the project</span>
+          <span
+            class="hero-btn-rectangle"
+            data-dark-class="dark-theme-green-background dark-theme-background-hover"
+          ></span>
+        </a>
+        <p class="hero-text caption">
+          I work with people all over the world to create
+          <span class="hero-text-color" data-dark-class="dark-theme-green-color"
+            >impressive</span
+          >
+          and
+          <span class="hero-text-color" data-dark-class="dark-theme-green-color"
+            >functional websites</span
+          >
+          that reflect each client’s unique personality.
+        </p>
+      </div>
+    </div>
+    <ul class="hero-socials" data-dark-class="dark-theme-charcoal-background">
+      <li class="hero-social-link">
+        <a
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          data-dark-class="dark-theme-green-color-hover"
+          >Instagram</a
+        >
+      </li>
+      <li class="hero-social-link">
+        <a
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          data-dark-class="dark-theme-green-color-hover"
+          >Facebook</a
+        >
+      </li>
+      <li class="hero-social-link">
+        <a
+          href="https://www.linkedin.com/school/goit-start-your-career-in-it/"
+          data-dark-class="dark-theme-green-color-hover"
+          target="_blank"
+          >Linkedin</a
+        >
+      </li>
+      <li class="hero-social-link">
+        <a
+          href="https://github.com/IhorMtr/project-Codezilla"
+          target="_blank"
+          data-dark-class="dark-theme-green-color-hover"
+          >GitHub</a
+        >
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section id="about-me">
+  <div class="container">
+    <div class="about-me-section">
+      <h2 class="about-me-headline">
+        About
+        <span
+          class="about-me-color-headline"
+          data-dark-class="dark-theme-green-color"
+          >me</span
+        >
+      </h2>
+      <div class="wrap">
+        <div class="about-me-img-wrapper">
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="/Portfolio/assets/about-me-dt@2x-DRTq9Cbf.webp 2x, /Portfolio/assets/about-me-dt-CzfpyLWU.webp 1x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/Portfolio/assets/about-me-tablet@2x-nZBlcJuA.webp 2x, /Portfolio/assets/about-me-tablet-DisIbWWV.webp 1x"
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/Portfolio/assets/about-me@2x-Cp9QN5eP.webp 2x, /Portfolio/assets/about-me-DpnMTkO-.webp 1x"
+              type="image/webp"
+            />
+            <img src="/Portfolio/assets/about-me-e4MY5R1Y.jpg" alt="about me image" />
+          </picture>
+        </div>
+        <div class="about-me-bio">
+          <h3 class="about-me-bio-headline">BIO</h3>
+          <p class="about-me-bio-text">
+            I'm Lloyd Jefferson, a talented programmer specializing in software
+            development. My expertise spans various programming languages and
+            technologies, and I am dedicated to continually enhancing my skills.
+            I thrive on seeking unconventional and creative solutions to
+            problems, leveraging a high level of analytical skills to
+            effectively tackle even the most challenging tasks.
+          </p>
+          <p>
+            Adaptable to both independent and team-oriented work, I collaborate
+            seamlessly with colleagues, exchanging ideas and finding optimal
+            solutions. My professional maturity enables me to navigate
+            challenges and stressful situations with a calm demeanor,
+            maintaining a consistently high quality of work. Committed to
+            self-improvement, I actively engage in studying new technologies and
+            practices to stay current with the latest innovations in the field.
+          </p>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="about-me-education">
+          <h3 class="about-me-education-headline">EDUCATION</h3>
+          <ul class="about-me-education-list">
+            <li
+              class="about-me-education-list-item"
+              data-dark-class="dark-theme-before-green-cl"
+            >
+              2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+              York
+            </li>
+            <li
+              class="about-me-education-list-item"
+              data-dark-class="dark-theme-before-green-cl"
+            >
+              2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+              School, New York
+            </li>
+            <li
+              class="about-me-education-list-item"
+              data-dark-class="dark-theme-before-green-cl"
+            >
+              2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+            </li>
+          </ul>
+        </div>
+        <div class="about-me-role">
+          <h3 class="about-me-role-headline">ROLE</h3>
+          <ul class="about-me-role-list">
+            <li
+              class="about-me-role-list-item"
+              data-dark-class="dark-theme-before-green-cl"
+            >
+              Frontend development
+            </li>
+            <li
+              class="about-me-role-list-item"
+              data-dark-class="dark-theme-before-green-cl"
+            >
+              HeadlessCMS, Wordpress
+            </li>
+            <li
+              class="about-me-role-list-item"
+              data-dark-class="dark-theme-before-green-cl"
+            >
+              Blender (enjoy)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="tech-skills">
+  <div class="container">
+    <h2 class="visually-hidden">tech-skills</h2>
+    <div class="marquee" data-dark-class="dark-theme-dark-green-background">
+      <ul class="tech-skills-list" id="techSkillsList1"></ul>
+
+      <ul aria-hidden="true" class="tech-skills-list" id="techSkillsList2"></ul>
+    </div>
+    <div
+      class="marquee tech-second-container"
+      data-dark-class="dark-theme-charcoal-background"
+    >
+      <ul class="tech-skills-list tech-second-list" id="techSkillsList3"></ul>
+      <ul
+        aria-hidden="true"
+        class="tech-skills-list tech-second-list"
+        id="techSkillsList4"
+      ></ul>
+    </div>
+  </div>
+</section>
+
+      <section id="my_projects">
+  <div class="container">
+    <h2 class="my_projects-header">
+      MY
+      <span class="my_projects-span" data-dark-class="dark-theme-green-color"
+        >PROJECTS</span
+      >
+    </h2>
+    <ul class="my_projects-list"></ul>
+    <button
+      type="button"
+      id="load-more"
+      data-dark-class="dark-theme-cl dark-theme-green-color-hover"
+    >
+      Load more
+      <div
+        class="load-more-line"
+        data-dark-class="dark-theme-green-background"
+      ></div>
+    </button>
+  </div>
+</section>
+
+      <section>
+  <div class="container container-benefits">
+    <div class="benefits-row">
+      <div
+        class="benefits-col-12 benefits-col-tablet-12 benefits-col-desktop-8"
+      >
+        <div class="benefits-decor-image-container">
+          <img src="/Portfolio/assets/decor-bg-3-Ddm4OTOf.png" />
+        </div>
+        <h2>
+          <span class="accet-green" data-dark-class="dark-theme-green-color"
+            >Benefits</span
+          >
+          of working with me
+        </h2>
+      </div>
+    </div>
+
+    <ul class="benefits-row benefits-margin-row">
+      <li
+        class="benefits-col-12 benefits-col-tablet-6 benefits-col-desktop-8"
+      ></li>
+      <li
+        class="benefits-col-12 benefits-col-tablet-6 benefits-col-desktop-4 benefit-item"
+      >
+        <div class="benefits-row">
+          <div
+            class="benefit-icon"
+            data-dark-class="dark-theme-dark-green-background"
+          >
+            <svg data-dark-class="dark-theme-green-stroke">
+              <use href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-user"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="benefits-row">
+          <h3 class="caption">Expertise</h3>
+        </div>
+        <div class="benefits-row">
+          <p>
+            With extensive experience in development, I have a deep
+            understanding of programming and website development.
+          </p>
+        </div>
+      </li>
+      <li
+        class="benefits-col-12 benefits-col-tablet-6 benefits-col-desktop-4 benefit-item"
+      >
+        <div class="benefits-row">
+          <div
+            class="benefit-icon"
+            data-dark-class="dark-theme-dark-green-background"
+          >
+            <svg data-dark-class="dark-theme-green-stroke">
+              <use href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-message-chat-circle"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="benefits-row">
+          <h3 class="caption">Communication</h3>
+        </div>
+        <div class="benefits-row">
+          <p>
+            Understanding your needs and wants is my priority and I am always
+            available for discussions and open to corrections.
+          </p>
+        </div>
+      </li>
+
+      <li
+        class="benefits-col-12 benefits-col-tablet-6 benefits-col-desktop-4 benefit-item"
+      >
+        <div class="benefits-row">
+          <div
+            class="benefit-icon"
+            data-dark-class="dark-theme-dark-green-background"
+          >
+            <svg data-dark-class="dark-theme-green-stroke">
+              <use href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-brush"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="benefits-row">
+          <h3 class="caption">Art</h3>
+        </div>
+        <div class="benefits-row">
+          <p>
+            Thanks to my creative nature, I am ready to accept challenges and
+            help you bring your ideas to life.
+          </p>
+        </div>
+      </li>
+
+      <li
+        class="benefits-col-12 benefits-col-tablet-6 benefits-col-desktop-4 benefit-item"
+      >
+        <div class="benefits-row">
+          <div
+            class="benefit-icon"
+            data-dark-class="dark-theme-dark-green-background"
+          >
+            <svg data-dark-class="dark-theme-green-stroke">
+              <use href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-hourglass"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="benefits-row">
+          <h3 class="caption">Urgent execution</h3>
+        </div>
+        <div class="benefits-row">
+          <p>
+            I understand how important time is to you. Ready to work quickly and
+            efficiently, without reducing the quality of work.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section>
+  <div class="container">
+    <div class="block-faq">
+      <h2 class="title-faq">
+        frequently asked
+        <span class="span-title-faq" data-dark-class="dark-theme-green-color"
+          >question</span
+        >
+      </h2>
+      <div class="accordion-container">
+        <div
+          class="ac"
+          data-dark-class="dark-theme-bg-transperent dark-theme-border-none"
+          data-dark-class-active="dark-theme-dark-green-background"
+        >
+          <h2 class="ac-header">
+            <button
+              type="button"
+              class="ac-trigger"
+              data-dark-class="dark-theme-cl"
+            >
+              What programming languages ​​are most often used in your project?
+              <span class="ac-span-icon">
+                <svg class="ac-icon" data-dark-class="dark-theme-stroke">
+                  <use
+                    xlink:href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-chevron-down"
+                  ></use>
+                </svg>
+              </span>
+            </button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text" data-dark-class="dark-theme-cl">
+              In the field of web development, there are various technologies
+              and programming languages. Typically, this includes a combination
+              of frontend (client side) and backend (server side) languages.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="ac"
+          data-dark-class="dark-theme-bg-transperent dark-theme-border-none"
+          data-dark-class-active="dark-theme-dark-green-background"
+        >
+          <h2 class="ac-header">
+            <button
+              type="button"
+              class="ac-trigger"
+              data-dark-class="dark-theme-cl"
+            >
+              What are the deadlines for the project?
+              <span class="ac-span-icon">
+                <svg class="ac-icon" data-dark-class="dark-theme-stroke">
+                  <use
+                    xlink:href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-chevron-down"
+                  ></use>
+                </svg>
+              </span>
+            </button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text" data-dark-class="dark-theme-cl">
+              The terms of project implementation depend to a large extent on a
+              number of factors, such as the scope of the project, its
+              complexity, and the availability of resources. Determining exact
+              deadlines is a difficult task, and it usually occurs during the
+              planning phase of the project.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="ac"
+          data-dark-class="dark-theme-bg-transperent dark-theme-border-none"
+          data-dark-class-active="dark-theme-dark-green-background"
+        >
+          <h2 class="ac-header">
+            <button
+              type="button"
+              class="ac-trigger"
+              data-dark-class="dark-theme-cl"
+            >
+              What payment methods do you accept?
+              <span class="ac-span-icon">
+                <svg class="ac-icon" data-dark-class="dark-theme-stroke">
+                  <use
+                    xlink:href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-chevron-down"
+                  ></use>
+                </svg>
+              </span>
+            </button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text" data-dark-class="dark-theme-cl">
+              Payment through credit and debit cards such as Visa, MasterCard,
+              specialized electronic payment systems such as PayPal, as well as
+              payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="ac"
+          data-dark-class="dark-theme-bg-transperent dark-theme-border-none"
+          data-dark-class-active="dark-theme-dark-green-background"
+        >
+          <h2 class="ac-header">
+            <button
+              type="button"
+              class="ac-trigger"
+              data-dark-class="dark-theme-cl"
+            >
+              How can I contact you?
+              <span class="ac-span-icon">
+                <svg class="ac-icon" data-dark-class="dark-theme-stroke">
+                  <use
+                    xlink:href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-chevron-down"
+                  ></use>
+                </svg>
+              </span>
+            </button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text" data-dark-class="dark-theme-cl">
+              In the field of web development, there are various technologies
+              and programming languages. Typically, this includes a combination
+              of frontend (client side) and backend (server side) languages.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="ac"
+          data-dark-class="dark-theme-bg-transperent dark-theme-border-none"
+          data-dark-class-active="dark-theme-dark-green-background"
+        >
+          <h2 class="ac-header">
+            <button
+              type="button"
+              class="ac-trigger"
+              data-dark-class="dark-theme-cl"
+            >
+              Do you provide advice or support?
+              <span class="ac-span-icon">
+                <svg class="ac-icon" data-dark-class="dark-theme-stroke">
+                  <use
+                    xlink:href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-chevron-down"
+                  ></use>
+                </svg>
+              </span>
+            </button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text" data-dark-class="dark-theme-cl">
+              The terms of project implementation depend to a large extent on a
+              number of factors, such as the scope of the project, its
+              complexity, and the availability of resources. Determining exact
+              deadlines is a difficult task, and it usually occurs during the
+              planning phase of the project.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="ac"
+          data-dark-class="dark-theme-bg-transperent dark-theme-border-none"
+          data-dark-class-active="dark-theme-dark-green-background"
+        >
+          <h2 class="ac-header">
+            <button
+              type="button"
+              class="ac-trigger"
+              data-dark-class="dark-theme-cl"
+            >
+              What does the process of developing a software product look like
+              from idea to implementation?
+              <span class="ac-span-icon">
+                <svg class="ac-icon" data-dark-class="dark-theme-stroke">
+                  <use
+                    xlink:href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-chevron-down"
+                  ></use>
+                </svg>
+              </span>
+            </button>
+          </h2>
+          <div class="ac-panel">
+            <p class="ac-text" data-dark-class="dark-theme-cl">
+              Payment through credit and debit cards such as Visa, MasterCard,
+              specialized electronic payment systems such as PayPal, as well as
+              payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="reviews-section">
+  <div class="container">
+    <h2 class="reviews-title">Reviews</h2>
+    <ul class="swiper">
+      <li class="swiper-wrapper"></li>
+      <li class="swiper-button-wrapper">
+        <div
+          class="swiper-button-prev"
+          data-dark-class="dark-theme-border-full dark-theme-charcoal-background-hover"
+        >
+          <svg
+            class="swiper-button-icon-prev"
+            data-dark-class="dark-theme-stroke"
+          >
+            <use href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </div>
+        <div
+          class="swiper-button-next"
+          data-dark-class="dark-theme-border-full dark-theme-charcoal-background-hover"
+        >
+          <svg
+            class="swiper-button-icon-next"
+            data-dark-class="dark-theme-stroke"
+          >
+            <use href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-arrow-narrow-right"></use>
+          </svg>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="contacts" id="contacts">
+  <div class="contacts-container container" data-dark-class="dark-theme-cl-bg">
+    <h2 class="contacts-title">
+      Let's
+      <span class="main-color" data-dark-class="dark-theme-green-color"
+        >work together</span
+      >
+    </h2>
+    <div class="contacts-info">
+      <div class="contacts-info-text">
+        <p class="contacts-text">
+          Contact me to transform your ideas into exceptional solutions.
+        </p>
+        <address class="contacts-address">
+          <ul>
+            <li>
+              <svg
+                class="contacts-icon"
+                width="24"
+                height="24"
+                data-dark-class="dark-theme-green-stroke"
+              >
+                <use href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-phone"></use>
+              </svg>
+              <a
+                class="contacts-link"
+                href="tel:+380904567890"
+                data-dark-class="dark-theme-green-color-hover"
+                >+38 090 456 78 90</a
+              >
+            </li>
+            <li>
+              <svg
+                class="contacts-icon"
+                width="24"
+                height="24"
+                data-dark-class="dark-theme-green-stroke"
+              >
+                <use href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-mail"></use>
+              </svg>
+              <a
+                class="contacts-link"
+                href="mailto:lloydjefferson@gmail.com"
+                data-dark-class="dark-theme-green-color-hover"
+                >lloydjefferson@gmail.com</a
+              >
+            </li>
+            <li>
+              <svg
+                class="contacts-icon"
+                width="24"
+                height="24"
+                data-dark-class="dark-theme-green-stroke"
+              >
+                <use href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-location"></use>
+              </svg>
+              <a
+                class="contacts-link"
+                href="https://maps.app.goo.gl/kFypVq1J5R8Gcuus6"
+                data-dark-class="dark-theme-green-color-hover"
+                target="_blank"
+                >USA, New York</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+      <form class="contacts-form">
+        <label class="input-wrap">
+          <svg
+            class="success-filled visually-hidden"
+            width="16"
+            height="16"
+            data-dark-class="dark-theme-green-fill"
+          >
+            <use href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-success-filled"></use>
+          </svg>
+          <input
+            class="form-input"
+            type="text"
+            name="email"
+            placeholder="Your email*"
+            required
+            data-dark-class="dark-theme-cl dark-theme-cl-placeholder dark-theme-charcoal-background"
+          />
+          <span class="error-message visually-hidden"
+            >Invalid email, try again</span
+          >
+        </label>
+        <textarea
+          name="message"
+          placeholder="Message"
+          data-dark-class="dark-theme-cl dark-theme-cl-placeholder dark-theme-charcoal-background"
+          required
+        ></textarea>
+        <button
+          type="submit"
+          data-dark-class="dark-theme-green-background dark-theme-background-hover"
+        >
+          Send message
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="contacts-backdrop contacts-is-hidden">
+    <div
+      class="contacts-modal"
+      data-dark-class="dark-theme-charcoal-background"
+    >
+      <button type="button" class="contacts-modal-btn" data-modal-close>
+        <svg
+          class="modal-btn-icon"
+          width="24"
+          height="24"
+          data-dark-class="dark-theme-stroke"
+        >
+          <use href="/Portfolio/assets/icons-nD2TS3l1.svg#icon-x"></use>
+        </svg>
+      </button>
+      <h3
+        class="contacts-modal-title caption"
+        data-dark-class="dark-theme-green-color"
+      >
+        Thank you for your interest in cooperation!
+      </h3>
+      <p class="contacts-modal-text">
+        The manager will contact you shortly to discuss further details and
+        opportunities for cooperation. Please stay in touch.
+      </p>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer>
+  <div class="container footer-container">
+    <div class="flex-link">
+      <a class="footer-logo" href="#header" data-dark-class="dark-theme-cl"
+        >lloyd<span
+          class="footer-last-name"
+          data-dark-class="dark-theme-green-color"
+          >jefferson.</span
+        ></a
+      >
+      <ul class="footer-list">
+        <li class="footer-social-link">
+          <a
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            data-dark-class="dark-theme-cl dark-theme-green-color-hover"
+            >Instagram</a
+          >
+        </li>
+        <li class="footer-social-link">
+          <a
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            data-dark-class="dark-theme-cl dark-theme-green-color-hover"
+            >Facebook</a
+          >
+        </li>
+        <li class="footer-social-link">
+          <a
+            href="https://www.linkedin.com/school/goit-start-your-career-in-it/"
+            target="_blank"
+            data-dark-class="dark-theme-cl dark-theme-green-color-hover"
+            >Linkedin</a
+          >
+        </li>
+        <li class="footer-social-link">
+          <a
+            href="https://github.com/IhorMtr/project-Codezilla"
+            target="_blank"
+            data-dark-class="dark-theme-cl dark-theme-green-color-hover"
+            >GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="footer-copyright">
+      <p class="footer-copyright-link" data-dark-class="dark-theme-cl">
+        &copy; Copyright 2025. Made by LloydJefferson
+      </p>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
