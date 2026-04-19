@@ -23,65 +23,75 @@ import iconsSprite from '../img/icons/icons.svg';
 
 const projects = [
   {
-    image1x: rectangle10_1x,
-    image2x: rectangle10_2x,
-    stack: 'React, JavaScript, Node JS, Git',
-    name: 'power pulse webservice',
-  },
-  {
-    image1x: rectangle7_1x,
-    image2x: rectangle7_2x,
-    stack: 'React, JavaScript, Node JS, Git',
-    name: 'mimino website',
-  },
-  {
-    image1x: rectangle8_1x,
-    image2x: rectangle8_2x,
-    stack: 'React, JavaScript, Node JS, Git',
-    name: 'vyshyvanka vibes Landing Page',
-  },
-  {
-    image1x: rectangle9_1x,
-    image2x: rectangle9_2x,
-    stack: 'React, JavaScript, Node JS, Git',
-    name: 'green harvest online store',
-  },
-  {
-    image1x: rectangle11_1x,
-    image2x: rectangle11_2x,
-    stack: 'React, JavaScript, Node JS, Git',
-    name: 'wallet webservice',
-  },
-  {
-    image1x: rectangle6_1x,
-    image2x: rectangle6_2x,
-    stack: 'React, JavaScript, Node JS, Git',
-    name: 'chego jewelry website',
-  },
-  {
-    image1x: rectangle4_1x,
-    image2x: rectangle4_2x,
-    stack: 'React, JavaScript, Node JS, Git',
-    name: 'energy flow webservice',
-  },
-  {
     image1x: rectangle5_1x,
     image2x: rectangle5_2x,
-    stack: 'React, JavaScript, Node JS, Git',
-    name: 'fruitbox online store',
+    stack: 'Next JS, JavaScript, Node JS, Git, MongoDB, Express',
+    name: 'This is a simple and convenient pregnancy tracker for expectant mothers',
+    link: 'https://project-team-survivors-front.vercel.app/',
   },
   {
     image1x: rectangle12_1x,
     image2x: rectangle12_2x,
     stack: 'React, JavaScript, Node JS, Git',
-    name: 'English excellence webservice',
+    name: 'Campers travel trucks website',
+    link: 'https://travel-trucks-nine-mu.vercel.app/',
   },
   {
-    image1x: firstScreen1_1x,
-    image2x: firstScreen1_2x,
-    stack: 'React, JavaScript, Node JS, Git',
-    name: 'starlight studio landing page',
+    image1x: rectangle10_1x,
+    image2x: rectangle10_2x,
+    stack: 'HTML, CSS, JavaScript, Git',
+    name: 'WatchShop page',
+    link: 'https://ihormtr.github.io/project-CodeCrushers/',
   },
+  {
+    image1x: rectangle7_1x,
+    image2x: rectangle7_2x,
+    stack: 'React, JavaScript, Node JS, Git',
+    name: 'Web store page',
+    link: 'https://19taurus79.github.io/store/',
+  },
+  {
+    image1x: rectangle8_1x,
+    image2x: rectangle8_2x,
+    stack: 'React, JavaScript, HTML, CSS, Git',
+    name: 'Movies search service',
+    link: 'https://03-react-movies-xi-taupe.vercel.app/',
+  },
+  {
+    image1x: rectangle9_1x,
+    image2x: rectangle9_2x,
+    stack: 'Next JS, JavaScript, Node JS, Git',
+    name: 'NoteHub webservice',
+    link: 'https://06-notehub-nextjs-liart.vercel.app/notes',
+  },
+  // {
+  //   image1x: rectangle11_1x,
+  //   image2x: rectangle11_2x,
+  //   stack: 'React, JavaScript, Node JS, Git',
+  //   name: 'wallet webservice',
+  //   link: 'https://ihormtr.github.io/project-CodeCrushers/',
+  // },
+  // {
+  //   image1x: rectangle6_1x,
+  //   image2x: rectangle6_2x,
+  //   stack: 'React, JavaScript, Node JS, Git',
+  //   name: 'chego jewelry website',
+  //   link: 'https://ihormtr.github.io/project-CodeCrushers/',
+  // },
+  // {
+  //   image1x: rectangle4_1x,
+  //   image2x: rectangle4_2x,
+  //   stack: 'React, JavaScript, Node JS, Git',
+  //   name: 'energy flow webservice',
+  //   link: 'https://ihormtr.github.io/project-CodeCrushers/',
+  // },
+  // {
+  //   image1x: firstScreen1_1x,
+  //   image2x: firstScreen1_2x,
+  //   stack: 'React, JavaScript, Node JS, Git',
+  //   name: 'starlight studio landing page',
+  //   link: 'https://ihormtr.github.io/project-CodeCrushers/',
+  // },
 ];
 
 const projectList = document.querySelector('.my_projects-list');
@@ -100,12 +110,12 @@ function createMarkup(arr) {
           srcset="${item.image1x} 1x, ${item.image2x} 2x"
           type="image/webp"
         />
-        <img 
-          src="${item.image1x}" 
-          alt="${item.name}" 
-          class="my_projects-img" 
-          loading="lazy" 
-          width="320" 
+        <img
+          src="${item.image1x}"
+          alt="${item.name}"
+          class="my_projects-img"
+          loading="lazy"
+          width="320"
           height="184"
         />
       </picture>
@@ -114,7 +124,7 @@ function createMarkup(arr) {
           <p class="my_projects-item-stack">${item.stack}</p>
           <h3 class="my_projects-item-header">${item.name}</h3>
         </div>
-        <a href="https://github.com/IhorMtr/project-Codezilla" target="_blank" class="my_projects-button" data-dark-class="dark-theme-charcoal-background dark-theme-charcoal-background-hover">
+        <a href="${item.link}" target="_blank" class="my_projects-button" data-dark-class="dark-theme-charcoal-background dark-theme-charcoal-background-hover">
           VISIT
           <svg class="my_projects-icon" width="24" height="24" data-dark-class="dark-theme-green-stroke dark-theme-green-fill">
             <use href="${iconsSprite}#icon-diagonal-arrow"></use>

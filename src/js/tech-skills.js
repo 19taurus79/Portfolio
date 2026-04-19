@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
   const skills = [
-    'HTML/CSS',
-    'JavaScript',
-    'React',
-    'Node.js',
-    'React Native',
-    'TypeScript',
+    'TypeScript / JavaScript',
+    'React / Next.js',
+    'Python / FastAPI',
+    'PostgreSQL / Piccolo ORM',
+    'Docker',
+    'Pandas (Data Analysis)',
   ];
 
   const lists = [

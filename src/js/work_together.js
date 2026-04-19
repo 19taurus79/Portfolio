@@ -28,39 +28,24 @@ async function submitForm(event) {
     return;
   }
   try {
-    const url = 'https://portfolio-js.b.goit.study/api/requests';
-    const data = {
-      email: input.value.trim(),
-      comment: message.value.trim(),
-    };
-    await axios.post(url, data, {
-      headers: {
-        'Content-Type': 'application/json',
-      },
+    const botToken = '8715031429:AAFEq33qK1rT2ptsz5NW2jrEW2UcUa5h9s0';
+    const chatId = '548019148';
+    const text = `📩 Новое сообщение с портфолио!\n\n📧 Email: ${input.value.trim()}\n💬 Сообщение: ${message.value.trim()}`;
+
+    await axios.post(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+      chat_id: chatId,
+      text: text,
     });
+
     body.classList.add('contacts-no-scroll');
     modal.classList.remove('contacts-is-hidden');
     form.reset();
   } catch (error) {
-    if (error.status === 400) {
-      return iziToast.info({
-        title: 'Please',
-        message: 'leave a few words about your project.',
-        position: 'topRight',
-      });
-    } else if (error.status === 404) {
-      return iziToast.error({
-        title: 'Error',
-        message: 'Sorry, server is not found',
-        position: 'topRight',
-      });
-    } else if (error.status === 500) {
-      return iziToast.error({
-        title: 'Error,',
-        message: 'Sorry,there was a server failure.',
-        position: 'topRight',
-      });
-    }
+    iziToast.error({
+      title: 'Error',
+      message: 'Failed to send message. Please try again later.',
+      position: 'topRight',
+    });
     console.log(error);
   }
 }
